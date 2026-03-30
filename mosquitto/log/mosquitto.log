@@ -1,0 +1,12 @@
+1774868071: mosquitto version 2.1.2 starting
+1774868071: Config loaded from /mosquitto/config/mosquitto.conf.
+1774868071: Bridge support available.
+1774868071: Persistence support available.
+1774868071: TLS support available.
+1774868071: TLS-PSK support available.
+1774868071: Websockets support available.
+1774868071: Opening ipv4 listen socket on port 1883.
+1774868071: Opening ipv6 listen socket on port 1883.
+1774868071: Opening ipv4 listen socket on port 9001.
+1774868071: Opening ipv6 listen socket on port 9001.
+1774868071: mosquitto version 2.1.2 running

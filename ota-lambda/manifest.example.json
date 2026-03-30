@@ -1,0 +1,15 @@
+{
+  "latest": "1.0.4",
+  "firmware_path": "firmware/rova_v1.0.4.bin",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "size": 1245184,
+  "release_date": "2026-03-30",
+  "changelog": [
+    "Cricket widget: IPL team colors",
+    "Fixed weather AQI sometimes showing 0",
+    "UPI: added BHIM support",
+    "Performance improvements"
+  ],
+  "min_app_version": "1.0.0",
+  "release_notes_url": "https://rova.engiigenius.com/releases/1.0.4"
+}

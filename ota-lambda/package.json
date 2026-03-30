@@ -1,0 +1,9 @@
+{
+  "name": "rova-ota-manifest",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for ROVA OTA firmware manifest",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1000.0"
+  }
+}
