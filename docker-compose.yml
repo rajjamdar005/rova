@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: rova-mosquitto
+    ports:
+      - "1883:1883"   # Standard MQTT port (for ESP32-S3)
+      - "9001:9001"   # WebSocket port (for React Native app)
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+    networks:
+      - rova-network
+
+  # Optional: MQTT client GUI for testing/debugging
+  mqtt-explorer:
+    image: smeagolworms4/mqtt-explorer
+    container_name: rova-mqtt-explorer
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mosquitto
+    networks:
+      - rova-network
+    restart: unless-stopped
+
+networks:
+  rova-network:
+    driver: bridge
